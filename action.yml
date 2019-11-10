@@ -1,0 +1,6 @@
+# action.yml
+name: 'Pull Review'
+description: 'Assign pull request reviewers intelligently.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
