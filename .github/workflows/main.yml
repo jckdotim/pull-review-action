@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Pull Review
-      uses: jckdotim/pull-review-action
+      uses: jckdotim/pull-review-action@v0.1.2
