@@ -2,11 +2,6 @@
 
 set -e
 
-if [[ -z "$GITHUB_TOKEN" ]]; then
-  echo "Set the GITHUB_TOKEN environment variable."
-  exit 1
-fi
-
 owner=$(jq --raw-output .pull_request.base.repo.owner.login "$GITHUB_EVENT_PATH")
 repo=$(jq --raw-output .pull_request.base.repo.name "$GITHUB_EVENT_PATH")
 pr_number=$(jq --raw-output .number "$GITHUB_EVENT_PATH")
