@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine:3.10
+FROM node:10
 
 # Install jq
 RUN apk add --no-cache bash jq
