@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Pull Review
-      uses: jckdotim/pull-review-action@v0.1.2
+      uses: jckdotim/pull-review-action@v0.1.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
