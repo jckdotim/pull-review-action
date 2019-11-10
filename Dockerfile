@@ -2,7 +2,7 @@
 FROM node:10
 
 # Install jq
-RUN apk add --no-cache bash jq
+RUN apt-get update && apt-get install jq -y
 
 # Install pull-request
 RUN npm install --global pull-review
