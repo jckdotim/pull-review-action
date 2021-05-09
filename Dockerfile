@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM node:10
+FROM node:16
 
 # Install jq
 RUN apt-get update && apt-get install jq -y
